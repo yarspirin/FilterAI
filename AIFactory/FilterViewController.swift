@@ -34,7 +34,8 @@ class FilterViewController: UIViewController {
     }
     
     @IBAction func backButtonTouchUpInside(_ sender: UIButton) {
-        performSegue(withIdentifier: "CameraSegue", sender: self)
+        dismiss(animated: true, completion: nil)
+       // performSegue(withIdentifier: "CameraSegue", sender: self)
     }
     
     // Sorry for these hardcoded button actions

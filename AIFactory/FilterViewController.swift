@@ -113,8 +113,10 @@ class FilterViewController: UIViewController {
         didSet {
             if isProcessing {
                 SVProgressHUD.show()
+                view.isUserInteractionEnabled = false
             } else {
                 SVProgressHUD.dismiss()
+                view.isUserInteractionEnabled = true
             }
         }
     }

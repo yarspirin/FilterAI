@@ -26,8 +26,7 @@ class FilterViewController: UIViewController {
             return
         }
         
-        let imageShare = [image]
-        let activityViewController = UIActivityViewController(activityItems: imageShare, applicationActivities: nil)
+        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
         
         activityViewController.popoverPresentationController?.sourceView = self.view
         self.present(activityViewController, animated: true, completion: nil)
